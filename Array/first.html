@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!-- <script>
+    var arr = new Array(); //创建一个空数组，其长度为0;
+      alert(arr.length);
+  </script>
+  <script>
+    var a = new Array();  //定义数组
+     a[0] = "x",
+     a[1] = "y",
+     a[2] = "z"
+  </script>
+  <script>
+    var a = ["x","y","z"];//定义数组
+  </script>
+  <script>
+    var arr = new Array(['a','b','c'],['d','e','f']); //二维数组
+    // 上下2各是相痛的
+    var arr = new Array(
+      new Array(),
+      new Array(),
+      new Array()
+    );
+  </script> -->
+<script>
+  var Word = ["qwe", "asd", "zxc", "qaz"];
+    function myFunction() {
+      Word.push("single") //  Word.shift();  如果这里换程shift的话
+      var x = document.getElementById("demo");
+      x.innerHTML = Word;
+    }
+</script>
+</head>
+<body>
+<!-- <ul>
+  <li>1. 用数组对象的构造函数Array()，像创建对象一样(实际上就是对象)用new操作符进行实例化数组对象。</li>
+  <li>2. 使用构造函数Array()可以直接明确的指定数组的前n位元素。</li>
+  <li>3. 使用构造函数new Array()，直接加一个整数作为参数直接指定了数组的长度，被创建数组的每个元素值都为undefined</li>
+  <li>4.javascript的数组不需要设定长度，会自己进行扩展，数组名.length返回元素个数</li>
+  <li>5.
+    数组常用函数:
+    toString()：把数组转换成一个字符串
+    toLocaleString()：把数组转换成一个字符串
+    join()：把数组转换成一个用符号连接的字符串
+    shift()：将数组头部的一个元素移出
+    unshift()：在数组的头部插入一个元素
+    pop()：从数组尾部删除一个元素
+    push()：把一个元素添加到数组的尾部
+    concat()：给数组添加元素
+    slice()：返回数组的部分
+    reverse()：将数组反向排序
+    sort()：对数组进行排序操作
+    splice()：插入、删除或者替换一个数组元素
+  </li>
+  <li>
+    <ul>二维数组创建
+      <li>1.先创建一个一维数组，然后该一维数组的所有成员再创建一维数据</li>
+      <li>2.先创建一个一维数组，然后该一维数组的所有成员直接赋值</li>
+      <li>3.直接赋值</li>
+    </ul>
+  </li>
+<div>感觉js 中 学好数组，非常重要，可以解决</div>
+</ul> -->
+<button onclick="myFunction()">点我</button>
+<!-- 写了一点点简单的数组效果，方便自己实践 -->
+</body>
+</html>
