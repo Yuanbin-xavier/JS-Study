@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cycle</title>
+  <!--  计算1+2+3+...+10000 -->
+  <script>
+    var x = 0;
+    var i;
+    for (i=1; i<=10000; i++) {
+        x = x + i;
+    }
+    x;
+  </script>
+  <script>
+    // for循环最常用的地方是利用索引来遍历数组;
+    var arr = ['Apple', 'Google', 'Microsoft'];
+    var i, x;
+    for (i=0; i<arr.length; i++) {
+      x = arr[i];
+      alert(x);
+    }
+  </script>
+</head>
+<body>
+<div>for 循环的控制条件</div>
+<ul>
+  <li>i=1 这是初始条件，将变量i置为1；</li>
+  <li>i<=10000 这是判断条件，满足时就继续循环，不满足就退出循环；</li>
+  <li>i++ 这是每次循环后的递增条件，由于每次循环后变量i都会加1，因此它终将在若干次循环后不满足判断条件i<=10000而退出循环。</li>
+</ul>
+</body>
+</html>
