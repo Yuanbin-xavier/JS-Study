@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title></title>
+  <meta charset="UTF-8">
+  <title>排序</title>
 </head>
-<body>
+<script>
+  var a = [12, 22, 23, 4, 228, 27];
+    for (var i = 0; i < a.length; i++) {
+      for (var j = i + 1; j < a.length; j++) {
+        if (a[i] > a[j]) {
+          var tmp = a[i];
+            a[i] = a[j];
+            a[j] = tmp;
+        }
+      }
+    }
+  console.log(a);
+</script>
 
+<script>
+  function arrSortMaxToMin(arr){
+    var arrNew = [];
+    var arrOld = arr.slice(0);
+    for (var i = 0; i < arr.length; i++) {
+        arrNew.push(arrMaxNum(arrOld).maxNum);
+        arrOld.splice(arrMaxNum(arrOld).index,1);
+    };
+    console.log(arr)
+    return (arrNew);
+  }
+</script>
+<body>
+<a>第一种是for循环排序方法</a>
+<a>第二种是：复制数组的方法(二)var arrOld = arr.slice(0) , 原理:slice()函数是一个截取数组的函数,设置值为0,则是全部截取,相当于复制了.</a>
+<a>使用 var arrOld = arr 这种方法来复制一个数组,并且,对arrOld进行操作的话,是会影响到arr这个原数组的.因为javascript分原始类型与引用类型（与java、c#类似）。Array是引用类型。arrOld得到的是引用，所以对arrOld的修改会影响到arr。</a>
 </body>
 </html>

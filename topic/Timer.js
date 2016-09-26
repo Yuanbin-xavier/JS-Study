@@ -72,8 +72,24 @@ class Timer {
   }
 }
 
-const timer = new Timer(10,20)
+  const timer = new Timer(10,20)
 </script>
 <script>
+  function count(start, end) {
+    console.log(start);
+    if (start < end) {
+      timer - setTimeout(function () {
+        count(start + 1, end);
+      },1000);
+    }
+    function cancel() {
+      clearTimeout(timer);
+    }
+    return {
+      cancel: cancel
+    }
+  }
+  function count(start, end) {
 
+  }
 </script>
