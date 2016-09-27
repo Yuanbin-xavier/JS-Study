@@ -26,7 +26,7 @@
           var swap = elements[j];
           elements[j] = element[j+1];
           elements[j+1] = swap;
-        }
+        }  // 定义一个中间变量，交换2个值
       }
     }
   }
@@ -40,14 +40,14 @@
 <script>
   function arrSortMaxToMin(arr){
     var arrNew = [];
-    var arrOld = arr.slice(0);
+    var arrOld = arr.slice(0); //slice()函数是一个截取数组的函数,设置值为0,则是全部截取
     for (var i = 0; i < arr.length; i++) {
         arrNew.push(arrMaxNum(arrOld).maxNum);
         arrOld.splice(arrMaxNum(arrOld).index,1);
     };
     console.log(arr)
     return (arrNew);
-  }
+  }  //返回的是一个新数组,原数组并没有消失或者改变
 </script>
 <body>
 <a>第一种是: for循环排序方法</a>

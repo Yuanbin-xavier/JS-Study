@@ -4,12 +4,12 @@
 3、第一个数需要立即输出
 
 分了3种方法第一种是我自己写的，第二和第三来自同事的写法，学习很多 -->
-<script>
+<!-- <script>
   function count (start, end) {
     var timer = null;
     console.log(start);
-    timer = setInterval(function () {
-      if(start< end) {
+    timer = setInterval(function () {   //setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。
+      if(start < end) {
         console.log(++start);
       }
     },100);
@@ -19,8 +19,8 @@
       }
     }
   }
-</script>
-<script>
+</script> -->
+<!-- <script>
 function timer(start, end) {
   if (start > end) return;
   console.log(start);
@@ -39,8 +39,8 @@ function timer(start, end) {
     }
   };
 }
-</script>
-<script>
+</script> -->
+<!-- <script>
 class Timer {
   private start: number;
   private end: number;
@@ -73,23 +73,4 @@ class Timer {
 }
 
   const timer = new Timer(10,20)
-</script>
-<script>
-  function count(start, end) {
-    console.log(start);
-    if (start < end) {
-      timer - setTimeout(function () {
-        count(start + 1, end);
-      },1000);
-    }
-    function cancel() {
-      clearTimeout(timer);
-    }
-    return {
-      cancel: cancel
-    }
-  }
-  function count(start, end) {
-
-  }
-</script>
+</script> -->
