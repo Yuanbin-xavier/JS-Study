@@ -38,16 +38,44 @@
 </script> -->
 
 <script>
+  var arr = [45,98,67,57,85,6,58,83,48,18];
+  function arrSortMaxToMin(arr){
+    var arrNew = [];
+    var arrOld = arr.slice(0);
+    for (var i = 0; i < arr.length; i++) {
+      arrNew.push(arrMaxNum(arrOld).maxNum);
+      arrOld.splice(arrMaxNum(arrOld).index,1);
+    };
+    console.log(arr)
+    return (arrNew);
+  }
+</script>
+<script>
+// 找数组中最大的值
+function arrMaxNum(arr){
+  var maxNum = -Infinity, index = -1;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i]>maxNum) {
+       maxNum = arr[i];
+       index = i;
+
+  };
+  return {"maxNum":maxNum,"index":index};
+}
+
+var arr = [45,98,67,57,85,6,58,83,48,18];
   function arrSortMaxToMin(arr){
     var arrNew = [];
     var arrOld = arr.slice(0); //slice()函数是一个截取数组的函数,设置值为0,则是全部截取
     for (var i = 0; i < arr.length; i++) {
-        arrNew.push(arrMaxNum(arrOld).maxNum);
-        arrOld.splice(arrMaxNum(arrOld).index,1);
+      arrNew.push(arrMaxNum(arrOld).maxNum);
+      arrOld.splice(arrMaxNum(arrOld).index,1);
     };
     console.log(arr)
     return (arrNew);
-  }  //返回的是一个新数组,原数组并没有消失或者改变
+  }//返回的是一个新数组,原数组并没有消失或者改变
+console.log(arrSortMaxToMin(arr));
+
 </script>
 <body>
 <a>第一种是: for循环排序方法</a>
