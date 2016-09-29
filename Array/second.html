@@ -55,16 +55,15 @@
 function arrMaxNum(arr){
   var maxNum = -Infinity, index = -1;
   for (var i = 0; i < arr.length; i++) {
-    if (arr[i]>maxNum) {
-       maxNum = arr[i];
-       index = i;
-
+    if (arr[i] > maxNum) {
+      maxNum = arr[i];
+      index = i;
   };
   return {"maxNum":maxNum,"index":index};
 }
 
 var arr = [45,98,67,57,85,6,58,83,48,18];
-  function arrSortMaxToMin(arr){
+  function arrSortMaxToMin(arr) {
     var arrNew = [];
     var arrOld = arr.slice(0); //slice()函数是一个截取数组的函数,设置值为0,则是全部截取
     for (var i = 0; i < arr.length; i++) {

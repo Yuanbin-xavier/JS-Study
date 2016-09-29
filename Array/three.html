@@ -1,0 +1,46 @@
+<script>
+	var x
+	var mycars = new Array()
+			mycars[0] = "Saab"
+			mycars[1] = "Volvo"
+			mycars[2] = "BMW"
+			for (x in mycars) {
+				document.write(mycars[x] + "<br />")
+			}
+</script>
+
+<script>
+var now = new Date();
+var greeting = "Good" + ((now.getHours() > 17) ? " evening." : " day.");
+
+	var now = new Date();
+	var greeting = "Good";
+	if (now.getHours() > 17)
+	   greeting += " evening.";
+	else {
+	   greeting += " day.";
+	}
+</script>
+<!-- 这2个 js  我是练习 三目运算的，但是我可能还没有完全掌握透，还在不断地联系中-->
+<!-- JavaScript中条件（三目）运算符(?:)是根据条件执行两个语句中的其中一个。使用方法：
+test ? 语句1 : 语句2
+其中test是任何 Boolean 表达式。
+语句1是当 test 是 true 时执行的语句。可以是复合语句。
+语句2是当 test 是 false 时执行的语句。可以是复合语句。 -->
+<script>
+this.referParams.checkStatus = this.selectedCheckStatus ? this.selectedCheckStatus : '' ;
+
+	if (this.selectedCheckStatus) {
+		this.referParams.checkStatus = this.selectedCheckStatus
+	} else {
+		this.referParams.checkStatus = ''
+	}
+</script>
+
+<script>
+	var a = 1;
+	console.log( a === 1 ? (a + 1) : (a - 1) );
+	console.log( a === 1 ? true : false );
+	console.log( a === 1 && (a + 1) || (a - 1) );
+	console.log( a === 1 && true || false );
+</script>
