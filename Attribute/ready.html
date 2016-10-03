@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>简单的</title>
-	<style>
-		#div1 {
-			width: 240px;
-			height: 200px;
-			border: 1px solid #333;
-			background: #f1f1f1;
-			padding: 10px;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <title>简单的</title>
+  <style>
+    #div1 {
+      width: 240px;
+      height: 200px;
+      border: 1px solid #333;
+      background: #f1f1f1;
+      padding: 10px;
+    }
+  </style>
 </head>
 <script>
-	window.onload = function() {
-		var oDiv = document.getElementById('div1');
-		var oSpan = document.getElementById('span1');
-		var oText = document.getElementById('text1');
-		var oBtn = document.getElementById('btn1');
+  window.onload = function() {
+    var oDiv = document.getElementById('div1');
+    var oSpan = document.getElementById('span1');
+    var oText = document.getElementById('text1');
+    var oBtn = document.getElementById('btn1');
 
-		oBtn.onclick = function() {
-			oDiv.innerHTML += oSpan.innerHTML + oText.value + '<br>';
-			oText.value = '';
-		}
-	}
+    oBtn.onclick = function() {
+      oDiv.innerHTML += oSpan.innerHTML + oText.value + '<br>';
+      oText.value = '';
+    }
+  }
 </script>
 <body>
 <div id="div1"></div>
