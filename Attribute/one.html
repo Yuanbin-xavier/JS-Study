@@ -3,8 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <title>判断</title>
+  <style>
+    .red {
+      width: 300px;
+      border: 10px solid #ccc;
+      background: yellow;
+      padding: 10px;
+      color: blue;
+    }
+    .yellow {
+      width: 500px;
+      border: 10px solid #ccc;
+      background: red;
+      padding: 20px;
+      color: yellow;
+    }
+  </style>
 </head>
+<script>
+  // if () {
+  //   ...
+  // };
+
+  // if () {
+  //   ...
+  // } else {
+  //   ...
+  // };
+  // if () {
+  //   ...
+  // } else if {
+  //   ...
+  // } else {
+  //   ...
+  // }
+</script>
+<script>
+  window.onload = function () {
+    var oBtn1 = document.getElementById('btn1');
+    var oBtn2 = document.getElementById('btn2');
+    var oP = document.getElementById('p1');
+
+    var num = 15;
+
+    oBtn1.onclick = function () {
+      if (num < 22) {
+        num ++;
+        oP.style.fontSize = num + 'px';
+      }
+    };
+
+    oBtn2.onclick = function () {
+      if (num > 12) {
+        num --;
+        oP.style.fontSize = num + 'px';
+      }
+    };
+  }
+</script>
 <body>
+  <input id="btn1" type="button" value="+">
+  <input id="btn2" type="button" value="-">
+  <button id="btn3">红</button>
+  <button id="btn4">绿</button>
+  <p id="p1">
+    我一直想：是不是有时候，有些人不需要说再见，就已经离开了; 有时候有些事不用开口也明白;有时候，有些路不会走也要变长;那些人，那些事，那些路，只是那些，只是那时候，已是过往总是望着天空发呆，那些说好不分开的朋友不在了，转身陌路熟悉的，安静了安静的，离开了离开的，陌生了曾经的朋友，多数的都不联系了。说好了做永远的好朋友，你们还记得吗？在意太多的朋友，变得没了自我，最后总是把自己丢弃在无人的荒岛上，自己疗伤。不愿流露太多悲伤
+  </p>
 
 </body>
 </html>
